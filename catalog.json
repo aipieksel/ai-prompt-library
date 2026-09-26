@@ -1,0 +1,2812 @@
+{
+  "schema_version": 1,
+  "entry_count": 68,
+  "counts": {
+    "modifier": 8,
+    "prompt": 55,
+    "reference": 5
+  },
+  "entries": [
+    {
+      "id": "agent-wording-reference",
+      "title": "Agent Wording Reference",
+      "type": "reference",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use as a compact reference for common instruction wording",
+      "search_terms": [
+        "agent-wording-reference",
+        "coding",
+        "agent-quality",
+        "agent",
+        "agent-instructions",
+        "phrases",
+        "quality",
+        "reference",
+        "wording"
+      ],
+      "inputs": [],
+      "output": "Selected wording to add to a concrete task; no standalone deliverable.",
+      "mode": "reference",
+      "capabilities": [],
+      "related": [
+        "preserve-existing-system",
+        "fundamental-visual-redesign",
+        "minimal-scope-change"
+      ],
+      "aliases": [
+        "coding/agent-quality/agent-wording-reference.md",
+        "agent-wording-reference.md"
+      ],
+      "path": "references/wording/agent-wording-reference.md",
+      "prompt_sha256": "a548a1faffa5e9db92c567cb22ca4e25e6ee7d8e1485db9d998249955dc4e64c"
+    },
+    {
+      "id": "alternative-infrastructure-visual-metaphor",
+      "title": "Alternative Infrastructure Visual Metaphor",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "components",
+      "when_to_use": "Use when you want the same message communicated through a different technical visual component",
+      "search_terms": [
+        "alternative-infrastructure-visual-metaphor",
+        "design",
+        "components",
+        "alternative",
+        "dynamic-component",
+        "hero-visual",
+        "infrastructure",
+        "metaphor",
+        "not-static-image",
+        "visual"
+      ],
+      "inputs": [
+        "CURRENT_SECTION",
+        "DIRECTION"
+      ],
+      "output": "An editable HTML/CSS component, minimal JavaScript if justified, and integration notes.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "component-direction-recommendations",
+        "component-concept-redesign-with-direction",
+        "paste-ready-component-direction-recommendations"
+      ],
+      "aliases": [
+        "design/component-design/alternative-infrastructure-visual-metaphor.md",
+        "alternative-infrastructure-visual-metaphor.md"
+      ],
+      "path": "prompts/design/components/alternative-infrastructure-visual-metaphor.md",
+      "prompt_sha256": "b69880fd21edd11dd596a1c82c70c01090bc1dc1d70149b1c403410d84153549"
+    },
+    {
+      "id": "apply-reference-style",
+      "title": "Apply Reference Style",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when the current design should keep its content and functionality but visually match a reference style",
+      "search_terms": [
+        "apply-reference-style",
+        "design",
+        "style-transfer",
+        "apply",
+        "design-system",
+        "keep-content",
+        "reference",
+        "restyle-current-design",
+        "style",
+        "style-source"
+      ],
+      "inputs": [
+        "STYLE_REFERENCE",
+        "TARGET"
+      ],
+      "output": "A complete restyled target with the required CSS.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "reference-style-transfer-to-target-html",
+        "style-guided-redesign"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/apply-reference-style.md",
+        "apply-reference-style.md"
+      ],
+      "path": "prompts/design/style-transfer/apply-reference-style.md",
+      "prompt_sha256": "0c02d6dc6702d6dbc23b643b94d2fa5208b2f44d256bf527dab90dc3de3f8d9a"
+    },
+    {
+      "id": "assess-html-publish-readiness",
+      "title": "Assess HTML Publish Readiness",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "quality",
+      "when_to_use": "Assess an HTML page for SEO, conversion, credibility, factual safety, and publish readiness without editing it",
+      "search_terms": [
+        "assess-html-publish-readiness",
+        "design",
+        "quality",
+        "publish readiness",
+        "SEO",
+        "404",
+        "pre-launch",
+        "asses-this-page"
+      ],
+      "inputs": [
+        "HTML_FILE",
+        "PAGE_CONTEXT",
+        "DEPLOYMENT_STATE"
+      ],
+      "output": "assessed-<source-stem>.md plus a short score and recommendation message.",
+      "mode": "audit",
+      "capabilities": [
+        "file-access",
+        "research",
+        "browser-when-available"
+      ],
+      "related": [
+        "fix-html-from-assessment",
+        "content-audit",
+        "visual-verification"
+      ],
+      "aliases": [
+        "asses-this-page.md",
+        "asses-this-page"
+      ],
+      "path": "prompts/design/quality/assess-html-publish-readiness.md",
+      "prompt_sha256": "baf80cf4b34ebf39f19dfe8b5ace973cd8b21a68f1cf4acca476c3eb2d5c0ff7"
+    },
+    {
+      "id": "balsamiq-redesign-before-build",
+      "title": "Balsamiq Redesign Before Build",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use when the current UI is weak and you want rough redesign concepts before code",
+      "search_terms": [
+        "balsamiq-redesign-before-build",
+        "design",
+        "wireframes",
+        "balsamiq",
+        "before-build",
+        "build",
+        "no-code",
+        "planning",
+        "redesign",
+        "ux"
+      ],
+      "inputs": [
+        "CURRENT_INTERFACE",
+        "REDESIGN_GOAL",
+        "REFERENCE_MATERIAL"
+      ],
+      "output": "An annotated redesign wireframe plan before visual design or implementation.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/balsamiq-redesign-before-build.md",
+        "balsamiq-redesign-before-build.md"
+      ],
+      "path": "prompts/design/wireframes/balsamiq-redesign-before-build.md",
+      "prompt_sha256": "ec4710cda07733f38428c65dcdaec82bd4293b146ddde4df65e0bb6a8fc85e51"
+    },
+    {
+      "id": "balsamiq-ui-state-map",
+      "title": "Balsamiq UI State Map",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use when you want every meaningful UI state mapped before building",
+      "search_terms": [
+        "balsamiq-ui-state-map",
+        "design",
+        "wireframes",
+        "balsamiq",
+        "edge-cases",
+        "map",
+        "no-code",
+        "planning",
+        "state",
+        "states"
+      ],
+      "inputs": [
+        "BUILD_REQUEST",
+        "REFERENCE_MATERIAL"
+      ],
+      "output": "An annotated state map with actions, dependencies, validation, and transitions.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/balsamiq-ui-state-map.md",
+        "balsamiq-ui-state-map.md"
+      ],
+      "path": "prompts/design/wireframes/balsamiq-ui-state-map.md",
+      "prompt_sha256": "4bd0b2f5a7865fd50635d6c56bb4cf6a2118448f9df459fa39a158a2e7869efd"
+    },
+    {
+      "id": "best-default-prompt-lines",
+      "title": "Best Default Prompt Lines",
+      "type": "reference",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when you want quick reusable lines instead of full prompts",
+      "search_terms": [
+        "best-default-prompt-lines",
+        "coding",
+        "agent-quality",
+        "best-defaults",
+        "default",
+        "lines",
+        "phrases",
+        "prompt",
+        "quick-lines"
+      ],
+      "inputs": [],
+      "output": "Selected wording to add to a concrete task; no standalone deliverable.",
+      "mode": "reference",
+      "capabilities": [],
+      "related": [
+        "preserve-existing-system",
+        "fundamental-visual-redesign",
+        "minimal-scope-change"
+      ],
+      "aliases": [
+        "coding/agent-quality/best-default-prompt-lines.md",
+        "best-default-prompt-lines.md"
+      ],
+      "path": "references/wording/best-default-prompt-lines.md",
+      "prompt_sha256": "807d53f62a7801b804abda67b1e31d345c36abecd3db5b7129c54bb5e8af0771"
+    },
+    {
+      "id": "build-from-approved-balsamiq-wireframe",
+      "title": "Build From Approved Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use when the wireframe is approved and the agent should implement from it",
+      "search_terms": [
+        "build-from-approved-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "approved",
+        "approved-wireframe",
+        "balsamiq",
+        "build",
+        "codebase-first",
+        "implementation",
+        "wireframe"
+      ],
+      "inputs": [
+        "APPROVED_WIREFRAMES",
+        "PROJECT_CONTEXT"
+      ],
+      "output": "Implementation files matching the approved wireframes, with verification.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "code-execution",
+        "visual-inspection"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/build-from-approved-balsamiq-wireframe.md",
+        "build-from-approved-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/build-from-approved-balsamiq-wireframe.md",
+      "prompt_sha256": "f8a07d5bc4dfe6e7011f31b636a4fec029b12be8fb52ac2988286c1332196ea4"
+    },
+    {
+      "id": "build-html-page-from-scope-and-design-system",
+      "title": "Build an HTML Page From Scope and Design Rules",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "page-builds",
+      "when_to_use": "Build one standalone HTML page using separate content requirements and visual design rules",
+      "search_terms": [
+        "build-html-page-from-scope-and-design-system",
+        "design",
+        "page-builds"
+      ],
+      "inputs": [
+        "SOURCE_FILES"
+      ],
+      "output": "One complete standalone HTML file; no summary on success.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "browser-when-available",
+        "research-when-needed"
+      ],
+      "related": [
+        "implement-page-from-markdown-wireframe-and-reference-html",
+        "implement-spec-into-existing-html-with-design-system",
+        "assess-html-publish-readiness"
+      ],
+      "aliases": [
+        "design/build-html-page-from-scope-and-design-system.md",
+        "build-html-page-from-scope-and-design-system.md"
+      ],
+      "path": "prompts/design/page-builds/build-html-page-from-scope-and-design-system.md",
+      "prompt_sha256": "72d7124835e498cc7a7a6dfe7a959844c3d37545fba975b8871f88f97afcc523"
+    },
+    {
+      "id": "calendar-page-from-existing-design-system",
+      "title": "Calendar Page From Existing Design System",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "page-builds",
+      "when_to_use": "Use to build a scheduled-posts calendar overview using an existing HTML design system",
+      "search_terms": [
+        "calendar-page-from-existing-design-system",
+        "design",
+        "page-builds",
+        "calendar",
+        "existing-design-system",
+        "page",
+        "scheduled-posts",
+        "separate-css",
+        "system"
+      ],
+      "inputs": [
+        "REFERENCE_FILES"
+      ],
+      "output": "A full new calendar HTML page and scheduled-posts-calendar.css scoped to .scheduled-calendar-page.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "social-post-composer-from-existing-design-system",
+        "dashboard-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/page-feature-builds/calendar-page-from-existing-design-system.md",
+        "calendar-page-from-existing-design-system.md"
+      ],
+      "path": "prompts/design/page-builds/calendar-page-from-existing-design-system.md",
+      "prompt_sha256": "eb9704fd58a5af07ef93f64612d3c727e2ea15308db2517f5746e9369559e4e9"
+    },
+    {
+      "id": "code-agent-wording-cheat-sheet",
+      "title": "Code Agent Wording Cheat Sheet",
+      "type": "reference",
+      "primary_category": "coding",
+      "categories": [
+        "coding"
+      ],
+      "subcategory": "code-quality",
+      "when_to_use": "Use as a categorized reference for instructing agents to write better code",
+      "search_terms": [
+        "code-agent-wording-cheat-sheet",
+        "coding",
+        "code-quality",
+        "agent",
+        "code",
+        "codebase-first",
+        "implementation",
+        "phrases",
+        "quality",
+        "wording"
+      ],
+      "inputs": [],
+      "output": "Selected wording to add to a concrete task; no standalone deliverable.",
+      "mode": "reference",
+      "capabilities": [],
+      "related": [
+        "preserve-existing-system",
+        "fundamental-visual-redesign",
+        "minimal-scope-change"
+      ],
+      "aliases": [
+        "coding/code-quality/code-agent-wording-cheat-sheet.md",
+        "code-agent-wording-cheat-sheet.md"
+      ],
+      "path": "references/wording/code-agent-wording-cheat-sheet.md",
+      "prompt_sha256": "3b290cefd5805c6eac63f25f09aec9e1af73765cf66df8aa4cee74cf7fee98a7"
+    },
+    {
+      "id": "codebase-first-implementation",
+      "title": "Codebase-First Implementation",
+      "type": "prompt",
+      "primary_category": "coding",
+      "categories": [
+        "coding"
+      ],
+      "subcategory": "codebase-alignment",
+      "when_to_use": "Use as a single strong prompt before coding tasks",
+      "search_terms": [
+        "codebase-first-implementation",
+        "coding",
+        "codebase-alignment",
+        "architecture",
+        "codebase",
+        "codebase-first",
+        "existing-patterns",
+        "first",
+        "implementation"
+      ],
+      "inputs": [
+        "TASK",
+        "PROJECT_CONTEXT"
+      ],
+      "output": "The implementation, changed file paths, and verification results.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "code-execution"
+      ],
+      "related": [
+        "smart-agent-logic",
+        "safe-file-editing",
+        "verify-before-returning"
+      ],
+      "aliases": [
+        "coding/codebase-alignment/codebase-first-implementation.md",
+        "codebase-first-implementation.md"
+      ],
+      "path": "prompts/coding/codebase-alignment/codebase-first-implementation.md",
+      "prompt_sha256": "d73a2567483644abd3e27d40084b357fc515bd68cef755eba40db311fef80ca6"
+    },
+    {
+      "id": "component-concept-redesign",
+      "title": "Component Concept Redesign",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "components",
+      "when_to_use": "Use when you want to replace an existing focal component with a fresh dynamic component without naming the old component",
+      "search_terms": [
+        "component-concept-redesign",
+        "design",
+        "components",
+        "component",
+        "component-redesign",
+        "concept",
+        "dynamic-html-css",
+        "focal-component",
+        "redesign",
+        "visual-metaphor"
+      ],
+      "inputs": [
+        "CURRENT_SECTION"
+      ],
+      "output": "An editable HTML/CSS component, minimal JavaScript if justified, and integration notes.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "component-direction-recommendations",
+        "component-concept-redesign-with-direction",
+        "paste-ready-component-direction-recommendations"
+      ],
+      "aliases": [
+        "design/component-design/component-concept-redesign.md",
+        "component-concept-redesign.md"
+      ],
+      "path": "prompts/design/components/component-concept-redesign.md",
+      "prompt_sha256": "83e93203658563a1d82b55b95ea86bddd0e7cbf1ec2ded4380441e444378e7d3"
+    },
+    {
+      "id": "component-concept-redesign-with-direction",
+      "title": "Component Concept Redesign With Direction",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "components",
+      "when_to_use": "Use when you want to replace a current component and specify the new component direction, such as server rack or timeline",
+      "search_terms": [
+        "component-concept-redesign-with-direction",
+        "design",
+        "components",
+        "component",
+        "component-direction",
+        "component-redesign",
+        "concept",
+        "direction",
+        "dynamic-html-css",
+        "redesign"
+      ],
+      "inputs": [
+        "CURRENT_COMPONENT",
+        "DIRECTION"
+      ],
+      "output": "An editable HTML/CSS component, minimal JavaScript if justified, and integration notes.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "component-direction-recommendations",
+        "paste-ready-component-direction-recommendations"
+      ],
+      "aliases": [
+        "design/component-design/component-concept-redesign-with-direction.md",
+        "component-concept-redesign-with-direction.md"
+      ],
+      "path": "prompts/design/components/component-concept-redesign-with-direction.md",
+      "prompt_sha256": "f21253baaf9dfb0dc93f0b774d5cfc566cdbeac73f14dce00b48d2fea75bc987"
+    },
+    {
+      "id": "component-direction-recommendations",
+      "title": "Component Direction Recommendations",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "components",
+      "when_to_use": "Use before building when a section already has a focal component and you want replacement component ideas",
+      "search_terms": [
+        "component-direction-recommendations",
+        "design",
+        "components",
+        "component",
+        "component-ideas",
+        "direction",
+        "existing-focal-component",
+        "paste-ready",
+        "recommendations"
+      ],
+      "inputs": [
+        "CURRENT_SECTION"
+      ],
+      "output": "Exactly eight distinct component directions, each with paste-ready follow-up instructions.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "component-concept-redesign-with-direction",
+        "paste-ready-component-direction-recommendations"
+      ],
+      "aliases": [
+        "design/component-design/component-direction-recommendations.md",
+        "component-direction-recommendations.md"
+      ],
+      "path": "prompts/design/components/component-direction-recommendations.md",
+      "prompt_sha256": "d5448727f46eb105bd79c7147d2b7a8667dd52fa05a58e2bf50f5f6518172af9"
+    },
+    {
+      "id": "component-direction-recommendations-without-existing-focal-component",
+      "title": "Component Direction Recommendations Without Existing Focal Component",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "components",
+      "when_to_use": "Use when a section has no clear component and needs dynamic component ideas",
+      "search_terms": [
+        "component-direction-recommendations-without-existing-focal-component",
+        "design",
+        "components",
+        "add-component",
+        "component",
+        "component-ideas",
+        "direction",
+        "focal",
+        "no-focal-component",
+        "recommendations"
+      ],
+      "inputs": [
+        "CURRENT_SECTION"
+      ],
+      "output": "Exactly eight distinct component directions, each with paste-ready follow-up instructions.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "component-direction-recommendations",
+        "component-concept-redesign-with-direction",
+        "paste-ready-component-direction-recommendations"
+      ],
+      "aliases": [
+        "design/component-design/component-direction-recommendations-without-existing-focal-component.md",
+        "component-direction-recommendations-without-existing-focal-component.md"
+      ],
+      "path": "prompts/design/components/component-direction-recommendations-without-existing-focal-component.md",
+      "prompt_sha256": "fd75ebc2865ca46fc0e190bbdaa0d485615186653ed6fe461865e3571cfba3f7"
+    },
+    {
+      "id": "content-audit",
+      "title": "Audit Website Copy",
+      "type": "prompt",
+      "primary_category": "content",
+      "categories": [
+        "content"
+      ],
+      "subcategory": "editing",
+      "when_to_use": "Find contextual, factual, repetitive, and misplaced website copy without rewriting the source",
+      "search_terms": [
+        "content-audit",
+        "content",
+        "editing"
+      ],
+      "inputs": [
+        "CONTENT_FILES"
+      ],
+      "output": "One feedback-<base>.md audit per source file; no changes to original copy.",
+      "mode": "audit",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "content-update",
+        "no-invention"
+      ],
+      "aliases": [
+        "content/content-audit.prompt.md",
+        "content-audit.prompt.md"
+      ],
+      "path": "prompts/content/editing/content-audit.md",
+      "prompt_sha256": "8dd6ba9b3ab1b6ba17d3a6f3186f9bbe7b08f715a4181e86a42b8126b3871286"
+    },
+    {
+      "id": "content-update",
+      "title": "Apply Approved Content Feedback",
+      "type": "prompt",
+      "primary_category": "content",
+      "categories": [
+        "content"
+      ],
+      "subcategory": "editing",
+      "when_to_use": "Apply approved feedback to matching Markdown files and return corrected copy with a change summary",
+      "search_terms": [
+        "content-update",
+        "content",
+        "editing"
+      ],
+      "inputs": [
+        "FILE_PAIRS"
+      ],
+      "output": "updated-<base>.md and summary-<base>.md for every matched pair.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "research-when-needed"
+      ],
+      "related": [
+        "content-audit",
+        "no-invention"
+      ],
+      "aliases": [
+        "content/content-update.prompt.md",
+        "content-update.prompt.md"
+      ],
+      "path": "prompts/content/editing/content-update.md",
+      "prompt_sha256": "c09b12a068a213a495a59d1742b30d6f9b2d780dd1c81cec8c1b3d3c4203f6b8"
+    },
+    {
+      "id": "create-design-system-showcase",
+      "title": "Consolidate Sources Into a Design-System Showcase",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "showcases",
+      "when_to_use": "Consolidate extracted design evidence into one coherent, standalone HTML component showcase",
+      "search_terms": [
+        "create-design-system-showcase",
+        "design",
+        "showcases"
+      ],
+      "inputs": [
+        "SOURCE_FILES"
+      ],
+      "output": "One complete standalone HTML design-system and component showcase.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "vision-when-needed",
+        "browser"
+      ],
+      "related": [
+        "image-to-design-system-extraction-extended",
+        "extend-vps-design-system-showcase",
+        "research-vps-palette-comparison"
+      ],
+      "aliases": [
+        "design-system/create-design-system-showcase.md",
+        "create-design-system-showcase.md"
+      ],
+      "path": "prompts/design/showcases/create-design-system-showcase.md",
+      "prompt_sha256": "c4bf06ac3fa9f4aefffc275686f85a6c4bd069b56a30985c6de568ad6342465d"
+    },
+    {
+      "id": "css-architecture-redesign-without-markup-change",
+      "title": "CSS Architecture Redesign Without Markup Change",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when the HTML must stay locked but the visual presentation needs a real CSS redesign",
+      "search_terms": [
+        "css-architecture-redesign-without-markup-change",
+        "design",
+        "style-transfer",
+        "architecture",
+        "change",
+        "css",
+        "css-redesign",
+        "locked-html",
+        "markup",
+        "not-variable-only"
+      ],
+      "inputs": [
+        "TARGET_HTML",
+        "DIRECTION"
+      ],
+      "output": "Complete HTML with CSS-only changes, or a stylesheet when explicitly requested.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "full-presentation-redesign-for-locked-html",
+        "visual-verification"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/css-architecture-redesign-without-markup-change.md",
+        "css-architecture-redesign-without-markup-change.md"
+      ],
+      "path": "prompts/design/style-transfer/css-architecture-redesign-without-markup-change.md",
+      "prompt_sha256": "0f8bdad58643b29df6eedf8d44a941d6f8aab6dd1d2cd007a295a68cb9d367e8"
+    },
+    {
+      "id": "dashboard-balsamiq-wireframe",
+      "title": "Dashboard Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use when planning a dashboard/admin interface before implementation",
+      "search_terms": [
+        "dashboard-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "admin",
+        "balsamiq",
+        "dashboard",
+        "no-code",
+        "planning",
+        "ux",
+        "wireframe"
+      ],
+      "inputs": [
+        "DASHBOARD_PURPOSE",
+        "USERS",
+        "CORE_ACTIONS",
+        "DISPLAY_DATA",
+        "REFERENCE_MATERIAL"
+      ],
+      "output": "A dashboard wireframe covering the required flows and states.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/dashboard-balsamiq-wireframe.md",
+        "dashboard-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/dashboard-balsamiq-wireframe.md",
+      "prompt_sha256": "107707e82cdb35c54a98ac4d901d6cd21989732cf84da9ef9778c0124a554f02"
+    },
+    {
+      "id": "dashboard-url-to-url-migration-into-target-design-system",
+      "title": "Dashboard URL-to-URL Migration Into Target Design System",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "dashboard-migration",
+      "when_to_use": "Use when the source and target are live WordPress/admin dashboard URLs instead of files",
+      "search_terms": [
+        "dashboard-url-to-url-migration-into-target-design-system",
+        "design",
+        "dashboard-migration",
+        "dashboard",
+        "dashboard-url",
+        "migration",
+        "source-url",
+        "system",
+        "target",
+        "target-url"
+      ],
+      "inputs": [
+        "SOURCE_URL",
+        "TARGET_URL",
+        "TARGET_PROJECT"
+      ],
+      "output": "Migrated target files and verification, or an explicitly labeled plan when edit access is missing.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "authenticated-browser",
+        "code-execution"
+      ],
+      "related": [
+        "wordpress-admin-dashboard-migration-into-existing-plugin-design-system",
+        "html-content-and-layout-import-into-existing-design-system"
+      ],
+      "aliases": [
+        "design/dashboard-migration/dashboard-url-to-url-migration-into-target-design-system.md",
+        "dashboard-url-to-url-migration-into-target-design-system.md"
+      ],
+      "path": "prompts/design/dashboard-migration/dashboard-url-to-url-migration-into-target-design-system.md",
+      "prompt_sha256": "44f50406be9e9bd166dad2806b84790e9bf11d4515276a485915b09c89f58106"
+    },
+    {
+      "id": "design-change-wording-cheat-sheet",
+      "title": "Design Change Wording Cheat Sheet",
+      "type": "reference",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wording",
+      "when_to_use": "Use as a reference when giving design feedback to an agent",
+      "search_terms": [
+        "design-change-wording-cheat-sheet",
+        "design",
+        "wording",
+        "change",
+        "design-feedback",
+        "layout",
+        "phrases",
+        "ui-polish",
+        "visual-quality"
+      ],
+      "inputs": [],
+      "output": "Selected wording to add to a concrete task; no standalone deliverable.",
+      "mode": "reference",
+      "capabilities": [],
+      "related": [
+        "preserve-existing-system",
+        "fundamental-visual-redesign",
+        "minimal-scope-change"
+      ],
+      "aliases": [
+        "design/design-wording/design-change-wording-cheat-sheet.md",
+        "design-change-wording-cheat-sheet.md"
+      ],
+      "path": "references/wording/design-change-wording-cheat-sheet.md",
+      "prompt_sha256": "1540666be64de3d4a4c77321ac28f47bdcaa1c6206faee962864f3df9a4677b5"
+    },
+    {
+      "id": "design-system-compliance-audit-and-fix",
+      "title": "Audit and Implement Design-System Compliance",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "quality",
+      "when_to_use": "Extract atomic design requirements, implement them in controlled passes, and score only verified compliance",
+      "search_terms": [
+        "design-system-compliance-audit-and-fix",
+        "design",
+        "quality",
+        "scoring",
+        "compliance matrix",
+        "atomic checklist",
+        "mac voice"
+      ],
+      "inputs": [
+        "DESIGN_SYSTEM",
+        "IMPLEMENTATION_FILES"
+      ],
+      "output": "Updated implementation, atomic compliance matrix, and an evidence-backed eleven-part report.",
+      "mode": "audit-and-edit",
+      "capabilities": [
+        "file-access",
+        "code-execution",
+        "browser"
+      ],
+      "related": [
+        "strict-design-system-compliance",
+        "visual-verification",
+        "implementation-handoff-docs-from-mockup-or-html"
+      ],
+      "aliases": [
+        "design/design-system-scoring-implementation.prompt.md",
+        "design-system-scoring-implementation.prompt.md",
+        "design-system-scoring-implementation",
+        "design/design-system-scoring-implementation-mac-voice.prompt.md",
+        "design-system-scoring-implementation-mac-voice.prompt.md",
+        "design-system-scoring-implementation-mac-voice"
+      ],
+      "path": "prompts/design/quality/design-system-compliance-audit-and-fix.md",
+      "prompt_sha256": "d1d1ee2da0ac695ba35387abb73f363e26ae616658b96350b2164b743e9d88d5"
+    },
+    {
+      "id": "design-system-page-build-from-request",
+      "title": "Design-System Page Build From Request",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "page-builds",
+      "when_to_use": "Use when you want a new page/feature built from a request while using existing project variables and styles",
+      "search_terms": [
+        "design-system-page-build-from-request",
+        "design",
+        "page-builds",
+        "build",
+        "css-variables",
+        "existing-design-system",
+        "new-page",
+        "page",
+        "request",
+        "request-driven"
+      ],
+      "inputs": [
+        "TASK",
+        "REFERENCE_FILES"
+      ],
+      "output": "Complete HTML, a separate scoped CSS file when needed, and separate JavaScript only when required.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "implement-spec-into-existing-html-with-design-system",
+        "style-extension-from-reference"
+      ],
+      "aliases": [
+        "design/page-feature-builds/design-system-page-build-from-request.md",
+        "design-system-page-build-from-request.md"
+      ],
+      "path": "prompts/design/page-builds/design-system-page-build-from-request.md",
+      "prompt_sha256": "95f6240221ae408953bc73c74447ec6fbcd97f4737f7e4fd5523757ac74ca14a"
+    },
+    {
+      "id": "exact-output-format",
+      "title": "Exact Output Format",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when you need the agent to return exactly the requested format with no extra commentary",
+      "search_terms": [
+        "exact-output-format",
+        "coding",
+        "agent-quality",
+        "format",
+        "no-extras",
+        "output",
+        "output-format",
+        "ready-to-paste",
+        "single-version"
+      ],
+      "inputs": [
+        "OUTPUT_FORMAT"
+      ],
+      "output": "Only the output required by the supplied contract.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "implementation-ready-output",
+        "no-invention"
+      ],
+      "aliases": [
+        "coding/agent-quality/exact-output-format.md",
+        "exact-output-format.md"
+      ],
+      "path": "modifiers/exact-output-format.md",
+      "prompt_sha256": "809d1c7d520f413be29270499819ce32656f8ae31c34415506fcd94bcf4813b3"
+    },
+    {
+      "id": "execution-plan-from-approved-wireframe",
+      "title": "Execution Plan From Approved Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use after wireframes are approved to create an implementation plan before coding",
+      "search_terms": [
+        "execution-plan-from-approved-wireframe",
+        "design",
+        "wireframes",
+        "approved",
+        "approved-wireframe",
+        "execution",
+        "execution-plan",
+        "implementation-plan",
+        "phases",
+        "plan"
+      ],
+      "inputs": [
+        "APPROVED_WIREFRAMES",
+        "PROJECT_CONTEXT"
+      ],
+      "output": "A phased implementation plan with testing, risks, and rollback notes; no code changes.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/execution-plan-from-approved-wireframe.md",
+        "execution-plan-from-approved-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/execution-plan-from-approved-wireframe.md",
+      "prompt_sha256": "b67fe8e6f50950963b18942cda08d55a25ac4fbcac2c3aa674636b056f3d9fd3"
+    },
+    {
+      "id": "extend-vps-design-system-showcase",
+      "title": "Extend a Showcase With VPS Website Components",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "showcases",
+      "when_to_use": "Extend an existing dashboard showcase with a complete VPS website component layer and updated documentation",
+      "search_terms": [
+        "extend-vps-design-system-showcase",
+        "design",
+        "showcases",
+        "VPS",
+        "Example Hosting",
+        "52 sections",
+        "charts",
+        "usage",
+        "0%",
+        "100%",
+        "320px"
+      ],
+      "inputs": [
+        "EXISTING_SHOWCASE",
+        "PACKAGE_DOCUMENTS",
+        "PREVIOUS_ATTEMPTS"
+      ],
+      "output": "A ZIP containing the full updated HTML and seven required Markdown documents.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "code-execution",
+        "browser",
+        "archive-creation"
+      ],
+      "related": [
+        "create-design-system-showcase",
+        "design-system-compliance-audit-and-fix",
+        "research-vps-palette-comparison"
+      ],
+      "aliases": [
+        "design-system-showcase/extend-existing-showcase.md",
+        "extend-existing-showcase.md",
+        "extend-existing-showcase"
+      ],
+      "path": "prompts/design/showcases/extend-vps-design-system-showcase.md",
+      "prompt_sha256": "155e06793acd867150e70c1f4aaa872d5e1f91d84f202d5652769cea75e96ea4"
+    },
+    {
+      "id": "extra-agent-wording-cheat-sheet",
+      "title": "Extra Agent Wording Cheat Sheet",
+      "type": "reference",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use for quick wording around reference files, content preservation, and implementation behavior",
+      "search_terms": [
+        "extra-agent-wording-cheat-sheet",
+        "coding",
+        "agent-quality",
+        "agent",
+        "output",
+        "phrases",
+        "reference-work",
+        "scope",
+        "style-transfer",
+        "wording"
+      ],
+      "inputs": [],
+      "output": "Selected wording to add to a concrete task; no standalone deliverable.",
+      "mode": "reference",
+      "capabilities": [],
+      "related": [
+        "preserve-existing-system",
+        "fundamental-visual-redesign",
+        "minimal-scope-change"
+      ],
+      "aliases": [
+        "coding/agent-quality/extra-agent-wording-cheat-sheet.md",
+        "extra-agent-wording-cheat-sheet.md"
+      ],
+      "path": "references/wording/extra-agent-wording-cheat-sheet.md",
+      "prompt_sha256": "f2e6fa6aad7a840c8fffd2820f9d7451e7b033315b3547094ac4f1c4bd3efe72"
+    },
+    {
+      "id": "fix-html-from-assessment",
+      "title": "Fix HTML From an Approved Assessment",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "quality",
+      "when_to_use": "Apply only the approved issues from an HTML assessment; preserve all unrelated content, design, and behavior",
+      "search_terms": [
+        "fix-html-from-assessment",
+        "design",
+        "quality"
+      ],
+      "inputs": [
+        "HTML_FILE",
+        "APPROVED_ASSESSMENT"
+      ],
+      "output": "Only the complete updated HTML on success; a precise blocker report when required evidence is missing.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "browser-when-available"
+      ],
+      "related": [
+        "assess-html-publish-readiness",
+        "minimal-scope-change",
+        "safe-file-editing"
+      ],
+      "aliases": [
+        "fix-this-page.md",
+        "fix-this-page"
+      ],
+      "path": "prompts/design/quality/fix-html-from-assessment.md",
+      "prompt_sha256": "6e26f5b96fbb4d165e53f93fec0d75c72f341bd1fa0e78f4fd6a2cb53b7bb711"
+    },
+    {
+      "id": "full-presentation-redesign-for-locked-html",
+      "title": "Full Presentation Redesign for Locked HTML",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when prior CSS redesign only changed variables and did not materially improve the interface",
+      "search_terms": [
+        "full-presentation-redesign-for-locked-html",
+        "design",
+        "style-transfer",
+        "css-delta",
+        "css-redesign",
+        "full-presentation",
+        "html",
+        "locked",
+        "locked-html",
+        "presentation"
+      ],
+      "inputs": [
+        "TARGET_HTML",
+        "DIRECTION"
+      ],
+      "output": "Complete updated HTML, or a minimal selector-level CSS delta for separate-file delivery.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "css-architecture-redesign-without-markup-change",
+        "visual-verification"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/full-presentation-redesign-for-locked-html.md",
+        "full-presentation-redesign-for-locked-html.md"
+      ],
+      "path": "prompts/design/style-transfer/full-presentation-redesign-for-locked-html.md",
+      "prompt_sha256": "13c77815e292146752fff00dc28d00952c8eacc2db5d9a9236789b937df29d5d"
+    },
+    {
+      "id": "fundamental-visual-redesign",
+      "title": "Fundamental Visual Redesign",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "redesign",
+      "when_to_use": "Use when the agent keeps changing colors or spacing but the design still looks the same",
+      "search_terms": [
+        "fundamental-visual-redesign",
+        "design",
+        "redesign",
+        "design-architecture",
+        "fundamental",
+        "layout-architecture",
+        "not-restyle",
+        "visual",
+        "visual-hierarchy"
+      ],
+      "inputs": [
+        "TARGET",
+        "CONSTRAINTS"
+      ],
+      "output": "A materially redesigned target that preserves the stated requirements.",
+      "mode": "edit",
+      "capabilities": [
+        "visual-inspection"
+      ],
+      "related": [
+        "style-guided-redesign",
+        "visual-identity-redesign"
+      ],
+      "aliases": [
+        "design/visual-redesign/fundamental-visual-redesign.md",
+        "fundamental-visual-redesign.md"
+      ],
+      "path": "prompts/design/redesign/fundamental-visual-redesign.md",
+      "prompt_sha256": "620e42f3b9f5c0ed5289e400908f527b71e5634c12fe1205d3b521c6abcfe9dc"
+    },
+    {
+      "id": "general-balsamiq-wireframe",
+      "title": "General Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use for any project, feature, dashboard, page, workflow, or interface before implementation",
+      "search_terms": [
+        "general-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "balsamiq",
+        "dynamic",
+        "no-code",
+        "planning",
+        "ux",
+        "wireframe"
+      ],
+      "inputs": [
+        "BUILD_REQUEST",
+        "REFERENCE_MATERIAL"
+      ],
+      "output": "A low-fidelity wireframe specification for review; no production code.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/general-balsamiq-wireframe.md",
+        "general-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/general-balsamiq-wireframe.md",
+      "prompt_sha256": "1041c51298d9a5750298adc2fe9d1db39c7b0bb1c1c11c668e0102bcb43733a7"
+    },
+    {
+      "id": "html-content-and-layout-import-into-existing-design-system",
+      "title": "HTML Content and Layout Import Into Existing Design System",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when you want to import another HTML file’s layout/content into your current HTML but keep your current design system",
+      "search_terms": [
+        "html-content-and-layout-import-into-existing-design-system",
+        "design",
+        "style-transfer",
+        "content",
+        "current-design-system",
+        "html",
+        "import",
+        "import-layout",
+        "layout",
+        "merge-content"
+      ],
+      "inputs": [
+        "TARGET_HTML",
+        "SOURCE_HTML"
+      ],
+      "output": "Complete target HTML with the imported experience expressed in the target design system.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "wordpress-admin-dashboard-migration-into-existing-plugin-design-system",
+        "style-guided-redesign"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/html-content-and-layout-import-into-existing-design-system.md",
+        "html-content-and-layout-import-into-existing-design-system.md"
+      ],
+      "path": "prompts/design/style-transfer/html-content-and-layout-import-into-existing-design-system.md",
+      "prompt_sha256": "e98b6d32a08e7785ae79980885b8e9f865cf801c7e8fffa97f79aad1871019dd"
+    },
+    {
+      "id": "image-to-design-system-extraction",
+      "title": "Extract a Design System From Images",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "extraction",
+      "when_to_use": "Document visible copy, page anatomy, reusable components, and inferred design rules from image references",
+      "search_terms": [
+        "image-to-design-system-extraction",
+        "design",
+        "extraction"
+      ],
+      "inputs": [
+        "IMAGE_REFERENCES",
+        "SUPPORTING_CONTEXT"
+      ],
+      "output": "One complete Markdown extraction covering visible copy, structure, components, and design rules.",
+      "mode": "extract",
+      "capabilities": [
+        "vision",
+        "file-access"
+      ],
+      "related": [
+        "image-to-design-system-extraction-extended",
+        "create-design-system-showcase",
+        "implementation-handoff-docs-from-mockup-or-html"
+      ],
+      "aliases": [
+        "design/image-to-design-system-extraction.md",
+        "image-to-design-system-extraction.md"
+      ],
+      "path": "prompts/design/extraction/image-to-design-system-extraction.md",
+      "prompt_sha256": "16750ae217057a32129000eec228dc4803b4d928f3a0a03203ae67a2e231ea77"
+    },
+    {
+      "id": "image-to-design-system-extraction-extended",
+      "title": "Extract Images Into a Reusable Design Contract",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "extraction",
+      "when_to_use": "Produce a detailed visual extraction plus a reusable token-and-component implementation contract",
+      "search_terms": [
+        "image-to-design-system-extraction-extended",
+        "design",
+        "extraction"
+      ],
+      "inputs": [
+        "IMAGE_REFERENCES",
+        "SUPPORTING_CONTEXT"
+      ],
+      "output": "One complete Markdown extraction including a reusable design-system contract and fenced token schema.",
+      "mode": "extract",
+      "capabilities": [
+        "vision",
+        "file-access"
+      ],
+      "related": [
+        "image-to-design-system-extraction",
+        "create-design-system-showcase",
+        "implementation-handoff-docs-from-mockup-or-html"
+      ],
+      "aliases": [
+        "design/image-to-design-system-extraction-extended.md",
+        "image-to-design-system-extraction-extended.md"
+      ],
+      "path": "prompts/design/extraction/image-to-design-system-extraction-extended.md",
+      "prompt_sha256": "e38a8f56f96d5ab620f3bd24b40cdaa4b03459048e425d1b32b8dbd9bf7be0cc"
+    },
+    {
+      "id": "implement-page-from-markdown-wireframe-and-reference-html",
+      "title": "Implement Page from Markdown, Wireframe, and Reference HTML",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "page-builds",
+      "when_to_use": "You have a content Markdown file, an approved Balsamiq wireframe, and a reference HTML page, and you want the agent to implement the final page in the same website style",
+      "search_terms": [
+        "implement-page-from-markdown-wireframe-and-reference-html",
+        "design",
+        "page-builds",
+        "page build",
+        "html implementation",
+        "seo markdown",
+        "balsamiq wireframe",
+        "reference html",
+        "design system",
+        "website style"
+      ],
+      "inputs": [
+        "CONTENT_MARKDOWN",
+        "APPROVED_WIREFRAME",
+        "REFERENCE_HTML",
+        "PAGE_NAME"
+      ],
+      "output": "Full HTML and any required separate page-scoped CSS and JavaScript files.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "browser-when-available"
+      ],
+      "related": [
+        "seo-markdown-to-balsamiq-wireframe",
+        "build-html-page-from-scope-and-design-system",
+        "visual-verification"
+      ],
+      "aliases": [
+        "design/page-feature-builds/implement-page-from-markdown-wireframe-and-reference-html.md",
+        "implement-page-from-markdown-wireframe-and-reference-html.md"
+      ],
+      "path": "prompts/design/page-builds/implement-page-from-markdown-wireframe-and-reference-html.md",
+      "prompt_sha256": "9a64f372a4789d92f7b584e83eb4e5985f4bf5ed81e01c6383a46804e72303c8"
+    },
+    {
+      "id": "implement-spec-into-existing-html-with-design-system",
+      "title": "Implement a Spec Into Existing HTML",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "page-builds",
+      "when_to_use": "Add a specified feature to an existing interface while preserving its architecture and design system",
+      "search_terms": [
+        "implement-spec-into-existing-html-with-design-system",
+        "design",
+        "page-builds"
+      ],
+      "inputs": [
+        "TARGET_HTML",
+        "DESIGN_SYSTEM",
+        "IMPLEMENTATION_SPEC"
+      ],
+      "output": "The full updated target HTML, with only required placement or blocking notes as permitted by the contract.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "browser-when-available"
+      ],
+      "related": [
+        "build-html-page-from-scope-and-design-system",
+        "preserve-existing-system",
+        "design-system-compliance-audit-and-fix"
+      ],
+      "aliases": [
+        "design/implement-spec-into-existing-html-with-design-system.md",
+        "implement-spec-into-existing-html-with-design-system.md"
+      ],
+      "path": "prompts/design/page-builds/implement-spec-into-existing-html-with-design-system.md",
+      "prompt_sha256": "07e188079a966e99c3319902aa703d870120d0fa79b205500dceb5a3ea98886d"
+    },
+    {
+      "id": "implementation-handoff-docs-from-mockup-or-html",
+      "title": "Create an Implementation Handoff",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "handoff",
+      "when_to_use": "Document an approved mockup or HTML interface as three build-ready Markdown specifications",
+      "search_terms": [
+        "implementation-handoff-docs-from-mockup-or-html",
+        "design",
+        "handoff"
+      ],
+      "inputs": [
+        "APPROVED_SOURCES",
+        "PROJECT_CONTEXT"
+      ],
+      "output": "project-spec.md, project-design.md, and project-design-system.md, separately and in that order.",
+      "mode": "document",
+      "capabilities": [
+        "file-access",
+        "vision-when-needed"
+      ],
+      "related": [
+        "image-to-design-system-extraction-extended",
+        "implement-spec-into-existing-html-with-design-system",
+        "design-system-compliance-audit-and-fix"
+      ],
+      "aliases": [
+        "design/implementation-handoff-docs-from-mockup-or-html.md",
+        "implementation-handoff-docs-from-mockup-or-html.md"
+      ],
+      "path": "prompts/design/handoff/implementation-handoff-docs-from-mockup-or-html.md",
+      "prompt_sha256": "ebc15bfa69198d53fa980dfb32ff14ebce23518a7a4de93b6ab495bf77f92902"
+    },
+    {
+      "id": "implementation-ready-output",
+      "title": "Implementation-Ready Output",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding"
+      ],
+      "subcategory": "implementation-control",
+      "when_to_use": "Use when you need exact code, files, patches, steps, or validation checks instead of vague advice",
+      "search_terms": [
+        "implementation-ready-output",
+        "coding",
+        "implementation-control",
+        "exact-code",
+        "files",
+        "implementation",
+        "implementation-ready",
+        "output",
+        "patch",
+        "validation"
+      ],
+      "inputs": [],
+      "output": "Exact apply-ready files, patches, or steps in the main task's requested format.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "exact-output-format",
+        "verify-before-returning"
+      ],
+      "aliases": [
+        "coding/implementation-control/implementation-ready-output.md",
+        "implementation-ready-output.md"
+      ],
+      "path": "modifiers/implementation-ready-output.md",
+      "prompt_sha256": "bca1554862904f74f917afa5768e68a05b6a66c7bccd967db8a8050e08d71621"
+    },
+    {
+      "id": "integration-design-outline",
+      "title": "Plan a Business Integration",
+      "type": "prompt",
+      "primary_category": "business",
+      "categories": [
+        "business"
+      ],
+      "subcategory": "integration-planning",
+      "when_to_use": "Turn a business idea into a stakeholder-ready integration design and phased build plan, without writing code",
+      "search_terms": [
+        "integration-design-outline",
+        "business",
+        "integration-planning",
+        "business-plan",
+        "automation",
+        "webhooks",
+        "sync",
+        "integration"
+      ],
+      "inputs": [
+        "BUSINESS_BRIEF"
+      ],
+      "output": "One stakeholder-ready integration-design Markdown file with a tailored ASCII diagram.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "research-before-deciding",
+        "smart-agent-logic"
+      ],
+      "aliases": [
+        "business/business-plan.prompt.md",
+        "business-plan.prompt.md",
+        "business-plan"
+      ],
+      "path": "prompts/business/integration-planning/integration-design-outline.md",
+      "prompt_sha256": "088a0816e31bcdecebd41e20900738b97ba887acdb43177b17ff759da73f7946"
+    },
+    {
+      "id": "minimal-scope-change",
+      "title": "Minimal Scope Change",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding"
+      ],
+      "subcategory": "implementation-control",
+      "when_to_use": "Use when the agent keeps changing unrelated code, styling, or behavior",
+      "search_terms": [
+        "minimal-scope-change",
+        "coding",
+        "implementation-control",
+        "change",
+        "focused-patch",
+        "minimal",
+        "minimal-change",
+        "no-unrelated-cleanup",
+        "scope",
+        "scope-control"
+      ],
+      "inputs": [],
+      "output": "The smallest complete fix within the authorized scope.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "preserve-existing-system",
+        "safe-file-editing"
+      ],
+      "aliases": [
+        "coding/implementation-control/minimal-scope-change.md",
+        "minimal-scope-change.md"
+      ],
+      "path": "modifiers/minimal-scope-change.md",
+      "prompt_sha256": "6f71bccb9688cb045e66df74a2d78810ed5bbee931e6e2a8d414482cc4b0e637"
+    },
+    {
+      "id": "multi-concept-balsamiq-wireframe",
+      "title": "Multi-Concept Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use when you want several different rough layout directions before choosing one",
+      "search_terms": [
+        "multi-concept-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "balsamiq",
+        "compare-directions",
+        "concept",
+        "concepts",
+        "multi",
+        "no-code",
+        "planning"
+      ],
+      "inputs": [
+        "BUILD_REQUEST",
+        "REFERENCE_MATERIAL"
+      ],
+      "output": "Exactly three meaningfully different low-fidelity concepts; no implementation.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/multi-concept-balsamiq-wireframe.md",
+        "multi-concept-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/multi-concept-balsamiq-wireframe.md",
+      "prompt_sha256": "b4bfd0f592d8718618cbdb0d2239eccfe9c4edea3e7dc860deebe3ca1178d96d"
+    },
+    {
+      "id": "no-invention",
+      "title": "No Invention",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when the agent must not make up claims, prices, features, APIs, or behavior",
+      "search_terms": [
+        "no-invention",
+        "coding",
+        "agent-quality",
+        "claims",
+        "content-accuracy",
+        "evidence",
+        "invention",
+        "no",
+        "verified-facts"
+      ],
+      "inputs": [],
+      "output": "The main task deliverable without unsupported factual or functional claims.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "research-before-deciding",
+        "content-audit"
+      ],
+      "aliases": [
+        "coding/agent-quality/no-invention.md",
+        "no-invention.md"
+      ],
+      "path": "modifiers/no-invention.md",
+      "prompt_sha256": "669ce1670257cf637b8341493fddbe5b1ce0e3a96386e906ade8f6cb97ee592b"
+    },
+    {
+      "id": "paste-ready-component-direction-recommendations",
+      "title": "Paste-Ready Component Direction Recommendations",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "components",
+      "when_to_use": "Use when recommendation output should be formatted so the selected option can be pasted directly into the redesign prompt",
+      "search_terms": [
+        "paste-ready-component-direction-recommendations",
+        "design",
+        "components",
+        "component",
+        "component-ideas",
+        "direction",
+        "direction-block",
+        "paste",
+        "paste-ready",
+        "recommendations"
+      ],
+      "inputs": [
+        "CURRENT_SECTION"
+      ],
+      "output": "Exactly eight distinct component directions, each with paste-ready follow-up instructions.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "component-direction-recommendations",
+        "component-concept-redesign-with-direction"
+      ],
+      "aliases": [
+        "design/component-design/paste-ready-component-direction-recommendations.md",
+        "paste-ready-component-direction-recommendations.md"
+      ],
+      "path": "prompts/design/components/paste-ready-component-direction-recommendations.md",
+      "prompt_sha256": "46892668cc81a8611f8afb993f8094663507bbe5f23063bf318e479f8c83469f"
+    },
+    {
+      "id": "preserve-existing-system",
+      "title": "Preserve Existing System",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when the agent must fix or improve something without changing the surrounding system",
+      "search_terms": [
+        "preserve-existing-system",
+        "coding",
+        "agent-quality",
+        "minimal-change",
+        "no-refactor",
+        "preserve",
+        "preserve-system",
+        "safe-edits",
+        "system"
+      ],
+      "inputs": [],
+      "output": "A scoped change that preserves unrelated structure, behavior, and visual identity.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "minimal-scope-change",
+        "safe-file-editing"
+      ],
+      "aliases": [
+        "coding/agent-quality/preserve-existing-system.md",
+        "preserve-existing-system.md"
+      ],
+      "path": "modifiers/preserve-existing-system.md",
+      "prompt_sha256": "da41959c3d65203ae22aa5228dfb9cb1398bf48decc9b89275887a2435a2acdc"
+    },
+    {
+      "id": "prompt-library-dashboard-balsamiq-wireframe",
+      "title": "Prompt Library Dashboard Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use to wireframe a prompt library, wording library, knowledge base, or reusable instruction dashboard",
+      "search_terms": [
+        "prompt-library-dashboard-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "balsamiq",
+        "dashboard",
+        "knowledge-dashboard",
+        "library",
+        "no-code",
+        "planning",
+        "prompt"
+      ],
+      "inputs": [
+        "DASHBOARD_REQUEST",
+        "CONTENT_TYPES",
+        "REQUIRED_ACTIONS",
+        "REFERENCE_MATERIAL"
+      ],
+      "output": "A low-fidelity library dashboard specification including data model and UI states.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/prompt-library-dashboard-balsamiq-wireframe.md",
+        "prompt-library-dashboard-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/prompt-library-dashboard-balsamiq-wireframe.md",
+      "prompt_sha256": "a6003edc325ff071f33915c7c3f0605862551400bd2ab4e23a5a9c677c82a448"
+    },
+    {
+      "id": "reference-design-system-style-transfer-to-target-html",
+      "title": "Reference Design System Style Transfer to Target HTML",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when the style reference is a design-system Markdown file, website, or HTML reference",
+      "search_terms": [
+        "reference-design-system-style-transfer-to-target-html",
+        "design",
+        "style-transfer",
+        "design-system-md",
+        "highest-priority-source",
+        "html",
+        "markdown-reference",
+        "reference",
+        "style",
+        "system"
+      ],
+      "inputs": [
+        "TARGET_HTML",
+        "DESIGN_REFERENCE"
+      ],
+      "output": "A complete restyled HTML file following the documented design system.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "reference-style-transfer-to-target-html",
+        "strict-design-system-compliance"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/reference-design-system-style-transfer-to-target-html.md",
+        "reference-design-system-style-transfer-to-target-html.md"
+      ],
+      "path": "prompts/design/style-transfer/reference-design-system-style-transfer-to-target-html.md",
+      "prompt_sha256": "0b07e23df53645c2a2a915dea4279ad9dbaf4642d05ded11358885391b9e9e2f"
+    },
+    {
+      "id": "reference-style-transfer-to-target-html",
+      "title": "Reference Style Transfer to Target HTML",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when a target HTML file should keep its content and components but inherit the style of a URL or second HTML file",
+      "search_terms": [
+        "reference-style-transfer-to-target-html",
+        "design",
+        "style-transfer",
+        "html",
+        "preserve-target",
+        "reference",
+        "reference-url",
+        "selector-level-css",
+        "style",
+        "target"
+      ],
+      "inputs": [
+        "TARGET_HTML",
+        "STYLE_REFERENCE"
+      ],
+      "output": "A new complete HTML file with the transferred styling.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "reference-design-system-style-transfer-to-target-html",
+        "apply-reference-style"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/reference-style-transfer-to-target-html.md",
+        "reference-style-transfer-to-target-html.md"
+      ],
+      "path": "prompts/design/style-transfer/reference-style-transfer-to-target-html.md",
+      "prompt_sha256": "292f45fd6af921ae19a569dfdbb0b464eb0885629bbb91b56bab765277118948"
+    },
+    {
+      "id": "research-before-deciding",
+      "title": "Research Before Deciding",
+      "type": "prompt",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when the agent needs to compare options and make a practical recommendation",
+      "search_terms": [
+        "research-before-deciding",
+        "coding",
+        "agent-quality",
+        "comparison",
+        "current-evidence",
+        "deciding",
+        "decision-making",
+        "recommendation",
+        "research"
+      ],
+      "inputs": [
+        "DECISION",
+        "CONSTRAINTS"
+      ],
+      "output": "An evidence-backed comparison, recommendation, trade-offs, and implementation path.",
+      "mode": "research",
+      "capabilities": [
+        "research"
+      ],
+      "related": [
+        "no-invention",
+        "integration-design-outline"
+      ],
+      "aliases": [
+        "coding/agent-quality/research-before-deciding.md",
+        "research-before-deciding.md"
+      ],
+      "path": "prompts/coding/agent-quality/research-before-deciding.md",
+      "prompt_sha256": "b1658bb691e91f96191bd7bca574df4e974d9c9aedcac20db091a4061ba266f5"
+    },
+    {
+      "id": "research-campaign-design-system",
+      "title": "Research a Campaign Design System",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "showcases",
+      "when_to_use": "Define a campaign-specific visual and conversion system before building the campaign landing page",
+      "search_terms": [
+        "research-campaign-design-system",
+        "design",
+        "showcases"
+      ],
+      "inputs": [
+        "CAMPAIGN_BRIEF"
+      ],
+      "output": "One complete standalone HTML showcase with research notes, design tokens, components, and QA guidance.",
+      "mode": "research-and-build",
+      "capabilities": [
+        "research",
+        "browser",
+        "code-execution"
+      ],
+      "related": [
+        "research-vps-palette-comparison",
+        "create-design-system-showcase",
+        "build-html-page-from-scope-and-design-system"
+      ],
+      "aliases": [
+        "design-system-showcase/research-campaign-pallete.md",
+        "research-campaign-pallete.md",
+        "research-campaign-pallete"
+      ],
+      "path": "prompts/design/showcases/research-campaign-design-system.md",
+      "prompt_sha256": "07cf3b314433d9a6b851359f775f46b9a53e0d740bc6b903bb53fba8add49b47"
+    },
+    {
+      "id": "research-palette-showcase",
+      "title": "Research a Palette and Build Its Showcase",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "showcases",
+      "when_to_use": "Research a product or brand direction and demonstrate the full proposed design system in HTML",
+      "search_terms": [
+        "research-palette-showcase",
+        "design",
+        "showcases"
+      ],
+      "inputs": [
+        "BRAND_BRIEF"
+      ],
+      "output": "One complete standalone HTML showcase with research notes, design tokens, components, and QA guidance.",
+      "mode": "research-and-build",
+      "capabilities": [
+        "research",
+        "browser",
+        "code-execution"
+      ],
+      "related": [
+        "research-vps-palette-comparison",
+        "create-design-system-showcase",
+        "build-html-page-from-scope-and-design-system"
+      ],
+      "aliases": [
+        "design-system-showcase/research-pallete.md",
+        "research-pallete.md",
+        "research-pallete"
+      ],
+      "path": "prompts/design/showcases/research-palette-showcase.md",
+      "prompt_sha256": "963c9d39a3857b8b4750040608921ac20970e209335e749aecc9b2a2852035c6"
+    },
+    {
+      "id": "research-vps-palette-comparison",
+      "title": "Compare Six VPS Brand Palettes",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "showcases",
+      "when_to_use": "Compare six palettes in a neutral editorial HTML document while preserving a fixed dark-indigo brand anchor",
+      "search_terms": [
+        "research-vps-palette-comparison",
+        "design",
+        "showcases",
+        "palette",
+        "pallete",
+        "six palettes",
+        "indigo",
+        "neutral",
+        "comparison"
+      ],
+      "inputs": [
+        "PALETTE_BRIEF",
+        "PREVIOUS_ATTEMPTS"
+      ],
+      "output": "A brief list of avoided patterns followed by one complete neutral HTML document comparing exactly six palettes.",
+      "mode": "research-and-build",
+      "capabilities": [
+        "research",
+        "file-access",
+        "browser",
+        "code-execution"
+      ],
+      "related": [
+        "research-palette-showcase",
+        "research-campaign-design-system",
+        "extend-vps-design-system-showcase"
+      ],
+      "aliases": [
+        "design-system-showcase/research-vps-company-pallete.md",
+        "research-vps-company-pallete.md",
+        "research-vps-company-pallete"
+      ],
+      "path": "prompts/design/showcases/research-vps-palette-comparison.md",
+      "prompt_sha256": "da8626c234ef843a4f88408141eae4874c5f60a939ac9d89b93093a550cb30f8"
+    },
+    {
+      "id": "rigorous-agent-execution",
+      "title": "Rigorous Agent Execution",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when you want the agent to slow down, inspect carefully, avoid assumptions, and return accurate implementation-ready work",
+      "search_terms": [
+        "rigorous-agent-execution",
+        "coding",
+        "agent-quality",
+        "accuracy",
+        "agent",
+        "execution",
+        "implementation-ready",
+        "rigorous",
+        "verification"
+      ],
+      "inputs": [],
+      "output": "The main task deliverable, with accurate verification status when the output format allows it.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "codebase-first-implementation",
+        "verify-before-returning"
+      ],
+      "aliases": [
+        "coding/agent-quality/rigorous-agent-execution.md",
+        "rigorous-agent-execution.md"
+      ],
+      "path": "modifiers/rigorous-agent-execution.md",
+      "prompt_sha256": "8a4b3c5d3a258b15ccecd09e8a85d0cdb526d07cf99a865f16b3ddd592c0139b"
+    },
+    {
+      "id": "safe-file-editing",
+      "title": "Safe File Editing",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding"
+      ],
+      "subcategory": "file-safety",
+      "when_to_use": "Use when the agent edits project files and must not break or overwrite unrelated content",
+      "search_terms": [
+        "safe-file-editing",
+        "coding",
+        "file-safety",
+        "editing",
+        "file",
+        "file-editing",
+        "formatting",
+        "no-overwrite",
+        "patch",
+        "safe"
+      ],
+      "inputs": [],
+      "output": "Safely applied changes limited to the requested files and sections.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "minimal-scope-change",
+        "preserve-existing-system"
+      ],
+      "aliases": [
+        "coding/file-safety/safe-file-editing.md",
+        "safe-file-editing.md"
+      ],
+      "path": "modifiers/safe-file-editing.md",
+      "prompt_sha256": "300a31062dcb186a69176473fb800051562a19bd443f4f49edb707c31b475f55"
+    },
+    {
+      "id": "seo-markdown-to-balsamiq-wireframe",
+      "title": "SEO Markdown to Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "You have SEO research or page content in Markdown and want a Balsamiq-style wireframe before design or implementation",
+      "search_terms": [
+        "seo-markdown-to-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "balsamiq",
+        "wireframe",
+        "seo markdown",
+        "content markdown",
+        "page structure",
+        "content hierarchy",
+        "mockup"
+      ],
+      "inputs": [
+        "CONTENT_MARKDOWN"
+      ],
+      "output": "A full-page low-fidelity wireframe plan mapped to the source Markdown; no implementation.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "implement-page-from-markdown-wireframe-and-reference-html",
+        "content-audit"
+      ],
+      "aliases": [
+        "design/wireframes/seo-markdown-to-balsamiq-wireframe.md",
+        "seo-markdown-to-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/seo-markdown-to-balsamiq-wireframe.md",
+      "prompt_sha256": "7b705f492e8f13731a0d24938740624fdb6ddc0853ceb14bf2b46005f6608bce"
+    },
+    {
+      "id": "smart-agent-logic",
+      "title": "Smart Agent Logic",
+      "type": "prompt",
+      "primary_category": "coding",
+      "categories": [
+        "coding"
+      ],
+      "subcategory": "code-quality",
+      "when_to_use": "Use when the agent must build rules, scoring, matching, defaults, or automated behavior",
+      "search_terms": [
+        "smart-agent-logic",
+        "coding",
+        "code-quality",
+        "agent",
+        "automation",
+        "edge-cases",
+        "fallbacks",
+        "logic",
+        "rules",
+        "smart"
+      ],
+      "inputs": [
+        "REQUIREMENT",
+        "PROJECT_CONTEXT"
+      ],
+      "output": "A testable rule definition, implementation, and verification results.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "code-execution"
+      ],
+      "related": [
+        "codebase-first-implementation",
+        "no-invention"
+      ],
+      "aliases": [
+        "coding/code-quality/smart-agent-logic.md",
+        "smart-agent-logic.md"
+      ],
+      "path": "prompts/coding/code-quality/smart-agent-logic.md",
+      "prompt_sha256": "534fa23c1e1a02e657cc120b6ecef3e3ac232d3d4b389c4e216164cf157ad723"
+    },
+    {
+      "id": "social-post-composer-from-existing-design-system",
+      "title": "Social Post Composer From Existing Design System",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "page-builds",
+      "when_to_use": "Use to build a social post composer with list view, editor, platform-specific fields, and image picker modal",
+      "search_terms": [
+        "social-post-composer-from-existing-design-system",
+        "design",
+        "page-builds",
+        "composer",
+        "image-picker",
+        "infinite-scroll",
+        "linkedin",
+        "post",
+        "separate-css-js",
+        "social"
+      ],
+      "inputs": [
+        "REFERENCE_FILES"
+      ],
+      "output": "Full HTML, social-post-composer.css, and social-post-composer.js when required, scoped to .social-post-composer-page.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "calendar-page-from-existing-design-system",
+        "balsamiq-ui-state-map"
+      ],
+      "aliases": [
+        "design/page-feature-builds/social-post-composer-from-existing-design-system.md",
+        "social-post-composer-from-existing-design-system.md"
+      ],
+      "path": "prompts/design/page-builds/social-post-composer-from-existing-design-system.md",
+      "prompt_sha256": "279098d740bf508e3f05d55c7787646d0cec2bfa7e8ad7fcda96ac94aa86a04d"
+    },
+    {
+      "id": "strict-design-system-compliance",
+      "title": "Strict Design System Compliance",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when the agent should polish within an existing design system, not invent a new style",
+      "search_terms": [
+        "strict-design-system-compliance",
+        "design",
+        "style-transfer",
+        "compliance",
+        "design-system",
+        "no-new-style",
+        "polish",
+        "strict",
+        "system",
+        "tokens"
+      ],
+      "inputs": [
+        "DESIGN_SYSTEM",
+        "TASK"
+      ],
+      "output": "A scoped polish pass using only approved design rules.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "design-system-compliance-audit-and-fix",
+        "preserve-existing-system"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/strict-design-system-compliance.md",
+        "strict-design-system-compliance.md"
+      ],
+      "path": "prompts/design/style-transfer/strict-design-system-compliance.md",
+      "prompt_sha256": "713525234f20a4d0e5c2197f69bdbb49c6ab423d0a6802740f99f9742747c2d0"
+    },
+    {
+      "id": "style-extension-from-reference",
+      "title": "Style Extension From Reference",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when one approved HTML section should become the visual source of truth for building more sections",
+      "search_terms": [
+        "style-extension-from-reference",
+        "design",
+        "style-transfer",
+        "cohesive-sections",
+        "design-system",
+        "extend-page",
+        "extension",
+        "reference",
+        "reference-style",
+        "style"
+      ],
+      "inputs": [
+        "STYLE_REFERENCE",
+        "TASK"
+      ],
+      "output": "The requested new sections or interface implemented in the approved visual language.",
+      "mode": "build",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "style-transfer-extension",
+        "design-system-page-build-from-request"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/style-extension-from-reference.md",
+        "style-extension-from-reference.md"
+      ],
+      "path": "prompts/design/style-transfer/style-extension-from-reference.md",
+      "prompt_sha256": "804f86a811be890340146b49c62d587b79377923dc74376423185835950be4cd"
+    },
+    {
+      "id": "style-guided-redesign",
+      "title": "Style-Guided Redesign",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when the target page should be structurally redesigned, but inside the reference style system",
+      "search_terms": [
+        "style-guided-redesign",
+        "design",
+        "style-transfer",
+        "guided",
+        "not-style-transfer",
+        "redesign",
+        "redesign-inside-reference-style",
+        "style"
+      ],
+      "inputs": [
+        "STYLE_REFERENCE",
+        "TARGET"
+      ],
+      "output": "A structurally redesigned implementation within the reference visual system.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "fundamental-visual-redesign",
+        "apply-reference-style"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/style-guided-redesign.md",
+        "style-guided-redesign.md"
+      ],
+      "path": "prompts/design/style-transfer/style-guided-redesign.md",
+      "prompt_sha256": "2f80e3fed7b660bdbfa11c83e7a3359a1254fddaf1e4a27e72fb2c40223304c6"
+    },
+    {
+      "id": "style-transfer-extension",
+      "title": "Style Transfer Extension",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "style-transfer",
+      "when_to_use": "Use when you have a reference design file and a target page that needs to match that design language",
+      "search_terms": [
+        "style-transfer-extension",
+        "design",
+        "style-transfer",
+        "extension",
+        "infer-design-system",
+        "reference-file",
+        "style",
+        "target-page",
+        "transfer"
+      ],
+      "inputs": [
+        "STYLE_REFERENCE",
+        "TARGET"
+      ],
+      "output": "An updated target in the reference style, including compatible missing-component extensions.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "visual-inspection"
+      ],
+      "related": [
+        "style-extension-from-reference",
+        "apply-reference-style"
+      ],
+      "aliases": [
+        "design/design-system-style-transfer/style-transfer-extension.md",
+        "style-transfer-extension.md"
+      ],
+      "path": "prompts/design/style-transfer/style-transfer-extension.md",
+      "prompt_sha256": "53229ebdedc5b6b59b53fa78d492681e4e59c6e6b4edd7e02cd0b07e8631c884"
+    },
+    {
+      "id": "verify-before-returning",
+      "title": "Verify Before Returning",
+      "type": "modifier",
+      "primary_category": "coding",
+      "categories": [
+        "coding",
+        "design"
+      ],
+      "subcategory": "agent-quality",
+      "when_to_use": "Use when the agent should check its own work before returning it",
+      "search_terms": [
+        "verify-before-returning",
+        "coding",
+        "agent-quality",
+        "evidence",
+        "returning",
+        "self-review",
+        "testing",
+        "validation",
+        "verification",
+        "verify"
+      ],
+      "inputs": [],
+      "output": "The main deliverable and a truthful checked/unverified status in its permitted report format.",
+      "mode": "modify",
+      "capabilities": [],
+      "related": [
+        "visual-verification",
+        "rigorous-agent-execution"
+      ],
+      "aliases": [
+        "coding/agent-quality/verify-before-returning.md",
+        "verify-before-returning.md"
+      ],
+      "path": "modifiers/verify-before-returning.md",
+      "prompt_sha256": "59205c18bdcf86730c55671cf37d42ef4e01c10c3ba9b515b14a7a4437cfafe4"
+    },
+    {
+      "id": "visual-identity-redesign",
+      "title": "Visual Identity Redesign",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "redesign",
+      "when_to_use": "Use when the layout changed but the colors, glow, gradients, or atmosphere are still too similar",
+      "search_terms": [
+        "visual-identity-redesign",
+        "design",
+        "redesign",
+        "atmosphere",
+        "color-direction",
+        "identity",
+        "palette",
+        "surface-treatment",
+        "visual",
+        "visual-identity"
+      ],
+      "inputs": [
+        "TARGET",
+        "CONSTRAINTS"
+      ],
+      "output": "A redesigned visual identity with preserved required content and behavior.",
+      "mode": "edit",
+      "capabilities": [
+        "visual-inspection"
+      ],
+      "related": [
+        "fundamental-visual-redesign",
+        "research-palette-showcase"
+      ],
+      "aliases": [
+        "design/visual-redesign/visual-identity-redesign.md",
+        "visual-identity-redesign.md"
+      ],
+      "path": "prompts/design/redesign/visual-identity-redesign.md",
+      "prompt_sha256": "0724e23153f9de6baddcaee6e60b74ae5baf8d5306615a8e3298654141491491"
+    },
+    {
+      "id": "visual-pass-after-approved-wireframe",
+      "title": "Visual Pass After Approved Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use after wireframes are approved to create the polished design direction",
+      "search_terms": [
+        "visual-pass-after-approved-wireframe",
+        "design",
+        "wireframes",
+        "approved",
+        "approved-wireframe",
+        "design-system",
+        "pass",
+        "ui-design",
+        "visual",
+        "visual-pass"
+      ],
+      "inputs": [
+        "APPROVED_WIREFRAMES",
+        "DESIGN_SYSTEM"
+      ],
+      "output": "A polished visual design pass preserving the approved UX and states.",
+      "mode": "design",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/visual-pass-after-approved-wireframe.md",
+        "visual-pass-after-approved-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/visual-pass-after-approved-wireframe.md",
+      "prompt_sha256": "a35984d5a0e0b85f763818cfb9713b50bc0c8a66b586a64e5118f64569ece4a5"
+    },
+    {
+      "id": "visual-verification",
+      "title": "Visual Verification",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "redesign",
+      "when_to_use": "Use after UI changes when the agent should compare the result visually and fix issues",
+      "search_terms": [
+        "visual-verification",
+        "design",
+        "redesign",
+        "alignment",
+        "before-after",
+        "responsive",
+        "ui-polish",
+        "verification",
+        "visual",
+        "visual-check"
+      ],
+      "inputs": [
+        "CONTEXT",
+        "REFERENCES"
+      ],
+      "output": "Visual findings, scoped corrections, and evidence of inspected views and states.",
+      "mode": "verify",
+      "capabilities": [
+        "visual-inspection"
+      ],
+      "related": [
+        "verify-before-returning",
+        "design-system-compliance-audit-and-fix"
+      ],
+      "aliases": [
+        "design/visual-redesign/visual-verification.md",
+        "visual-verification.md"
+      ],
+      "path": "prompts/design/redesign/visual-verification.md",
+      "prompt_sha256": "6c932ef5703be46854db85062236878dd390d655a8fc2d9c732314948f9e8863"
+    },
+    {
+      "id": "wordpress-admin-dashboard-migration-into-existing-plugin-design-system",
+      "title": "WordPress Admin Dashboard Migration Into Existing Plugin Design System",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "dashboard-migration",
+      "when_to_use": "Use when migrating one plugin/admin dashboard into another while keeping the target plugin design system",
+      "search_terms": [
+        "wordpress-admin-dashboard-migration-into-existing-plugin-design-system",
+        "design",
+        "dashboard-migration",
+        "admin",
+        "dashboard",
+        "migration",
+        "plugin",
+        "plugin-admin",
+        "security",
+        "system"
+      ],
+      "inputs": [
+        "TARGET_PLUGIN",
+        "SOURCE_DASHBOARD"
+      ],
+      "output": "Updated target plugin files, migrated-item coverage, and verification status.",
+      "mode": "edit",
+      "capabilities": [
+        "file-access",
+        "code-execution",
+        "visual-inspection"
+      ],
+      "related": [
+        "dashboard-url-to-url-migration-into-target-design-system",
+        "wordpress-plugin-admin-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/dashboard-migration/wordpress-admin-dashboard-migration-into-existing-plugin-design-system.md",
+        "wordpress-admin-dashboard-migration-into-existing-plugin-design-system.md"
+      ],
+      "path": "prompts/design/dashboard-migration/wordpress-admin-dashboard-migration-into-existing-plugin-design-system.md",
+      "prompt_sha256": "42ee157741c21253f322bf1710552098109c216b87a7f75df38b87e701fb7781"
+    },
+    {
+      "id": "wordpress-plugin-admin-balsamiq-wireframe",
+      "title": "WordPress Plugin Admin Balsamiq Wireframe",
+      "type": "prompt",
+      "primary_category": "design",
+      "categories": [
+        "design"
+      ],
+      "subcategory": "wireframes",
+      "when_to_use": "Use when planning a WordPress plugin admin page before PHP/CSS/JS implementation",
+      "search_terms": [
+        "wordpress-plugin-admin-balsamiq-wireframe",
+        "design",
+        "wireframes",
+        "admin",
+        "balsamiq",
+        "no-code",
+        "planning",
+        "plugin",
+        "plugin-admin",
+        "ux"
+      ],
+      "inputs": [
+        "PAGE_REQUEST",
+        "TARGET_PLUGIN",
+        "SOURCE_REQUIREMENTS"
+      ],
+      "output": "A WordPress admin wireframe and behavior notes; no PHP, CSS, or JavaScript.",
+      "mode": "plan",
+      "capabilities": [
+        "file-access"
+      ],
+      "related": [
+        "general-balsamiq-wireframe",
+        "balsamiq-ui-state-map",
+        "execution-plan-from-approved-wireframe",
+        "build-from-approved-balsamiq-wireframe"
+      ],
+      "aliases": [
+        "design/wireframes/wordpress-plugin-admin-balsamiq-wireframe.md",
+        "wordpress-plugin-admin-balsamiq-wireframe.md"
+      ],
+      "path": "prompts/design/wireframes/wordpress-plugin-admin-balsamiq-wireframe.md",
+      "prompt_sha256": "a784f825e208a48acbfed69d48a39d794126351114ef81f13f978814a2d7c6d6"
+    }
+  ]
+}

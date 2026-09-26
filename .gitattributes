@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+CATALOG.md linguist-generated=true
+catalog.json linguist-generated=true
+prompts/**/README.md linguist-generated=true
+modifiers/README.md linguist-generated=true
+references/**/README.md linguist-generated=true
