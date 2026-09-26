@@ -164,6 +164,8 @@ For a read-only freshness check, run `python3 tools/library.py build --check`. T
 
 Validation checks metadata, unique IDs and aliases, required placeholders, related entries, duplicate bodies, canonical paths, local documentation links, generated indexes, and macOS metadata debris. It does **not** prove that a model will follow a prompt, verify external links, or benchmark generated applications.
 
+Two migration-accounting tests use a private maintainer manifest. They run in the maintainer checkout and are reported as skipped in public clones where that manifest is intentionally absent.
+
 ## Adapt responsibly
 
 Use an assistant with the capabilities a prompt actually requires: file access, image understanding, a browser, code execution, or archive creation. A Markdown file does not install those tools or authorize access to accounts.

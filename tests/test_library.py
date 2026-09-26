@@ -48,6 +48,7 @@ class RepositoryTests(unittest.TestCase):
                 self.assertTrue(output.strip())
                 self.assertNotIn(library.START, output)
 
+    @unittest.skipUnless((ROOT / "docs/source-manifest.json").exists(), "private migration manifest not present")
     def test_all_legacy_content_names_resolve(self):
         manifest = json.loads((ROOT / "docs/source-manifest.json").read_text())
         for row in manifest["files"]:
@@ -57,6 +58,7 @@ class RepositoryTests(unittest.TestCase):
                 if row["action"] != "replaced-navigation":
                     self.assertEqual(library.resolve(self.entries, row["path"]).path, row["targets"][0])
 
+    @unittest.skipUnless((ROOT / "docs/source-manifest.json").exists(), "private migration manifest not present")
     def test_source_accounting(self):
         data = json.loads((ROOT / "docs/source-manifest.json").read_text())
         self.assertEqual(len(data["files"]), 75)
