@@ -2,7 +2,9 @@
 
 Maintained by [aipieksel](https://github.com/aipieksel). Upstream credits and licenses remain with their respective authors.
 
-**Practical prompts for designing interfaces, changing code, improving content, and planning integrations.**
+AI Prompt Library is a collection of reusable working briefs for people who build interfaces, change code, write content, and plan integrations with AI assistance. Each prompt names the inputs it needs, the work it should produce, and the checks that make the result reviewable. You can read and copy a prompt directly; the included Python tool helps search, fill, and validate the collection.
+
+The library is organized around real tasks rather than one universal instruction. Choose a task prompt, provide its source files and context, fill its placeholders, and add a modifier only when that extra constraint applies. Design work is particularly well represented, from wireframes and style transfer through implementation review.
 
 ## How the library is organized
 
@@ -20,8 +22,6 @@ Use this map before opening individual files. Every task prompt lives under `pro
 | `tools/library.py` | Search, render, validate, and rebuild catalogs | Optional; the Markdown files are usable on their own |
 
 Filenames are lowercase kebab-case. Folder names match the category. Generated indexes (`CATALOG.md`, `catalog.json`, folder `README.md` files) come from `python3 tools/library.py build` — edit the canonical prompt files, then rebuild. Do not hand-edit those generated indexes.
-
-This library turns recurring requests into reusable working briefs: what to inspect, what may change, what must remain intact, what to produce, and how to check the result. It is especially focused on design-system work—wireframes, reference-driven HTML, component exploration, faithful style transfer, showcases, and implementation review.
 
 **68 entries · 55 task prompts · 8 modifiers · 5 wording references**
 
@@ -79,7 +79,7 @@ python3 tools/library.py list --subcategory wireframes
 
 Search covers IDs, titles, keywords, use cases, output descriptions, legacy aliases, and full prompt text. Separate words are AND-matched; quoted phrases stay together. It is a local text search, not a semantic model search. Add `--json` for machine-readable results.
 
-**On GitHub:** scope code search to the published repository and narrow by path. See the [search guide](docs/usage.md#search-on-github) for examples and the official syntax reference.
+**On GitHub:** scope code search to this repository and narrow by path. See the [search guide](docs/usage.md#search-on-github) for examples and the official syntax reference.
 
 ### Render a prompt with your inputs
 
